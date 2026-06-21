@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trisha G | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <div class="nav-logo">TG</div>
+    <ul class="nav-links" role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Electronics & Computer Engineering</p>
+      <h1 class="hero-title">Hi, I'm <span class="accent">Trisha G</span></h1>
+      <p class="hero-sub">IEEE Signal Processing Society Chair · Full-Stack Developer · AI Enthusiast</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-graphic" aria-hidden="true">
+      <div class="orbit-ring ring-1"></div>
+      <div class="orbit-ring ring-2"></div>
+      <div class="orbit-ring ring-3"></div>
+      <div class="hero-circle">TG</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a B.Tech student in <strong>Electronics and Computer Engineering</strong> at Manipal Academy of Higher Education, Bengaluru. I serve as the <strong>Chair of the IEEE Signal Processing Society Student Chapter</strong> at my institution.</p>
+          <p>Outside academics, I work with <strong>Siddsoft IT Solutions</strong> on AI products including MeetNote.ai, Talenza.ai, and Convozent.ai — helping build tools that work across India and the US.</p>
+          <p>I love bridging hardware and software, and building things that are actually useful.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num" data-target="10">0</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-target="3">0</span>
+            <span class="stat-label">AI Products Contributed</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-target="5">0</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">C++</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Frameworks & Tools</h3>
+          <div class="skill-tags">
+            <span class="tag">Flask</span>
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Docker</span>
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">SQLAlchemy</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Hardware & Embedded</h3>
+          <div class="skill-tags">
+            <span class="tag">Arduino</span>
+            <span class="tag">Raspberry Pi</span>
+            <span class="tag">Signal Processing</span>
+            <span class="tag">Circuit Design</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>AI & Data</h3>
+          <div class="skill-tags">
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Claude API</span>
+            <span class="tag">NLP</span>
+            <span class="tag">Data Analysis</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="filter-bar" role="group" aria-label="Filter projects by category">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai">AI</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="hardware">Hardware</button>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+
+        <article class="project-card" data-category="ai" tabindex="0">
+          <div class="card-tag">AI</div>
+          <h3>AI Chat Application</h3>
+          <p>Full-stack AI chat app using Flask, Claude API, SQLAlchemy, Docker, and GitHub Actions CI/CD pipeline.</p>
+          <div class="card-tech">
+            <span>Flask</span><span>Claude API</span><span>Docker</span>
+          </div>
+          <a href="https://github.com/Trisha-G2212" class="card-link" target="_blank" rel="noopener noreferrer" aria-label="View AI Chat Application on GitHub">GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="hardware" tabindex="0">
+          <div class="card-tag">Hardware</div>
+          <h3>Blind Man Stick</h3>
+          <p>Smart assistive walking stick with ultrasonic sensors and vibration feedback to detect obstacles for visually impaired users.</p>
+          <div class="card-tech">
+            <span>Arduino</span><span>Sensors</span><span>Embedded C</span>
+          </div>
+          <a href="https://github.com/Trisha-G2212" class="card-link" target="_blank" rel="noopener noreferrer" aria-label="View Blind Man Stick on GitHub">GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="ai" tabindex="0">
+          <div class="card-tag">AI</div>
+          <h3>Heart Disease Prediction</h3>
+          <p>ML model to predict heart disease risk using patient data, trained and evaluated with multiple classification algorithms.</p>
+          <div class="card-tech">
+            <span>Python</span><span>Scikit-learn</span><span>Pandas</span>
+          </div>
+          <a href="https://github.com/Trisha-G2212" class="card-link" target="_blank" rel="noopener noreferrer" aria-label="View Heart Disease Prediction on GitHub">GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="web" tabindex="0">
+          <div class="card-tag">Web</div>
+          <h3>Hangman Game</h3>
+          <p>Interactive browser-based Hangman game with a Node.js backend, animations, and score tracking. Deployed on GitHub.</p>
+          <div class="card-tech">
+            <span>JavaScript</span><span>Node.js</span><span>CSS3</span>
+          </div>
+          <a href="https://github.com/Trisha-G2212" class="card-link" target="_blank" rel="noopener noreferrer" aria-label="View Hangman Game on GitHub">GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="web" tabindex="0">
+          <div class="card-tag">Web</div>
+          <h3>MeetNote.ai Product Guide</h3>
+          <p>Client-facing HTML product guide for MeetNote.ai with consistent branding, responsive layout, and brand color system.</p>
+          <div class="card-tech">
+            <span>HTML5</span><span>CSS3</span><span>Branding</span>
+          </div>
+          <a href="https://github.com/Trisha-G2212" class="card-link" target="_blank" rel="noopener noreferrer" aria-label="View MeetNote.ai Product Guide on GitHub">GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="ai" tabindex="0">
+          <div class="card-tag">AI</div>
+          <h3>Competitive Analysis — MeetNote.ai</h3>
+          <p>Structured competitive analysis of AI meeting tools (Fireflies, Otter.ai, Fathom, tl;dv) with TAM/SAM/SOM framework.</p>
+          <div class="card-tech">
+            <span>Market Research</span><span>AI Products</span><span>Strategy</span>
+          </div>
+          <a href="https://github.com/Trisha-G2212" class="card-link" target="_blank" rel="noopener noreferrer" aria-label="View Competitive Analysis on GitHub">GitHub →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container contact-inner">
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="contact-sub">Open to internships, collaborations, and new opportunities.</p>
+      <div class="contact-links">
+        <a href="https://github.com/Trisha-G2212" class="contact-card" target="_blank" rel="noopener noreferrer" aria-label="Visit Trisha's GitHub profile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          GitHub
+        </a>
+        <a href="mailto:trisha@example.com" class="contact-card" aria-label="Send Trisha an email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Email Me
+        </a>
+        <a href="https://linkedin.com" class="contact-card" target="_blank" rel="noopener noreferrer" aria-label="Visit Trisha's LinkedIn profile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2024 Trisha G · Built with HTML, CSS & JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
